@@ -2,8 +2,6 @@ package ar.edu.unlam.pb2;
 
 public class Bicicleta {
 
-		private Integer plato;
-		private Integer pinion;
 		private Integer cadencia;
 		private Integer velocidad;
 		
@@ -11,27 +9,11 @@ public class Bicicleta {
 		
 		public Bicicleta()
 		{
-			this.plato=1;
-			this.pinion=1;
 			this.cadencia=0;
 			this.velocidad=0;
 		}
 
-		public Integer getPlato() {
-			return plato;
-		}
-		
-		public Integer getPinion() {
-			return pinion;
-		}
 
-		public void setPlato(Integer plato) {
-			this.plato = plato;
-		}
-
-		public void setPinion(Integer pinion) {
-			this.pinion = pinion;
-		}
 
 		public Integer getCadencia() {
 			return cadencia;

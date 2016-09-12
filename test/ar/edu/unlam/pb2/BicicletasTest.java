@@ -7,9 +7,9 @@ import org.junit.Test;
 public class BicicletasTest {
 
 	@Test
-	public void testCrearUnObjetoBicicleta()
+	public void testCrearUnObjetoBicicletaConCambios()
 	{
-		Bicicleta miBici = new Bicicleta();
+		BiciConCambios miBici = new BiciConCambios();
 		assertEquals(miBici.getPlato(),1,0);
 		//AssertEquals(miBici.getPlato(), 1,0);
 	}
@@ -17,8 +17,7 @@ public class BicicletasTest {
 	@Test
 	public void testCrearUnObjetoBicicletaPlayera()
 	{
-		Playera miBici = new Playera();
-		assertEquals(miBici.getPlato(),1,0);
+		Playera miPlayera = new Playera();
 	}
 
 	@Test

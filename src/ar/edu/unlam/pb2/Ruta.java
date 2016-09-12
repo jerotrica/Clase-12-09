@@ -1,6 +1,6 @@
 package ar.edu.unlam.pb2;
 
-public class Ruta extends Bicicleta {
+public class Ruta extends BiciConCambios {
 	
 		private final Integer PLATO_MAXIMO;
 		private final Integer PINION_MAXIMO;
@@ -28,6 +28,17 @@ public class Ruta extends Bicicleta {
 			}
 		}
 		
+
+		public Integer getPLATO_MAXIMO() {
+			return PLATO_MAXIMO;
+		}
+
+
+		public Integer getPINION_MAXIMO() {
+			return PINION_MAXIMO;
+		}
+
+
 		public void acelerar(){
 			super.acelerar();
 			super.acelerar();
