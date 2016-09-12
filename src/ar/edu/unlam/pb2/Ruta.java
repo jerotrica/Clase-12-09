@@ -2,8 +2,7 @@ package ar.edu.unlam.pb2;
 
 public class Ruta extends BiciConCambios {
 	
-		private final Integer PLATO_MAXIMO;
-		private final Integer PINION_MAXIMO;
+
 
 		
 		public Ruta(Integer platoMaximo, Integer pinionMaximo){
