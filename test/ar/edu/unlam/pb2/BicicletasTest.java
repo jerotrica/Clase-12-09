@@ -24,10 +24,10 @@ public class BicicletasTest {
 	@Test
 	public void testCrearUnObjetoBicicletaRuta()
 	{
-		Ruta miRutera = new Ruta();
+		Ruta miRutera = new Ruta(2,0);
 		miRutera.setPlato(2);
 		miRutera.acelerar();
-		assertEquals(miRutera.getPlato(),1,0);
+		assertEquals(miRutera.getPlato(),2,0);
 		assertEquals(miRutera.getVelocidad(), 2,0);
 	}
 	
@@ -37,8 +37,18 @@ public class BicicletasTest {
 		Triatlon miTriatlon = new Triatlon();
 		miTriatlon.setPlato(2);
 		miTriatlon.acelerar();
-		assertEquals(miTriatlon.getPlato(),1,0);
+		assertEquals(miTriatlon.getPlato(),2,0);
 		assertEquals(miTriatlon.getVelocidad(), 2,0);
+	}
+	
+	@Test
+	public void testCrearUnObjetoBicicletacon16piñones()
+	{
+		Triatlon miTriatlon = new Triatlon(2,16);
+		miTriatlon.setPlato(3);
+		miTriatlon.setPinion(14);
+		assertNotEquals(miTriatlon.getPlato(),3,0);
+		assertEquals(miTriatlon.getPinion(), 14,0);
 	}
 
 }

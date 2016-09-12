@@ -1,24 +1,35 @@
 package ar.edu.unlam.pb2;
 
 public class Ruta extends Bicicleta {
+	
+		private final Integer PLATO_MAXIMO;
+		private final Integer PINION_MAXIMO;
 
+		
+		public Ruta(Integer platoMaximo, Integer pinionMaximo){
+			this.PLATO_MAXIMO = platoMaximo;
+			this.PINION_MAXIMO = pinionMaximo;
+		}
+		
+		
 		public void setPlato(Integer plato)
 		{
-			if(plato>=1 && plato<=2)
+			if(plato>=1 && plato<=PLATO_MAXIMO)
 			{
-				this.plato = plato;
+				super.setPlato(plato);
 			}
 		}
 		
 		public void setPinion(Integer pinion)
 		{
-			if(pinion>=1 && pinion<=9)
+			if(pinion>=1 && pinion<=PINION_MAXIMO)
 			{
-				this.pinion = pinion;
+				super.setPinion(pinion);
 			}
 		}
 		
 		public void acelerar(){
-			velocidad=velocidad+2;
+			super.acelerar();
+			super.acelerar();
 		}
 }

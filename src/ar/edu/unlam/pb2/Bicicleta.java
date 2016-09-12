@@ -2,10 +2,10 @@ package ar.edu.unlam.pb2;
 
 public class Bicicleta {
 
-		protected Integer plato;
-		protected Integer pinion;
+		private Integer plato;
+		private Integer pinion;
 		private Integer cadencia;
-		protected Integer velocidad;
+		private Integer velocidad;
 		
 		//private String tipo;
 		
@@ -23,6 +23,14 @@ public class Bicicleta {
 		
 		public Integer getPinion() {
 			return pinion;
+		}
+
+		public void setPlato(Integer plato) {
+			this.plato = plato;
+		}
+
+		public void setPinion(Integer pinion) {
+			this.pinion = pinion;
 		}
 
 		public Integer getCadencia() {
@@ -43,6 +51,10 @@ public class Bicicleta {
 		
 		public void acelerar(){
 			velocidad++;
+		}
+		
+		public void frenar(){
+			velocidad--;
 		}
 
 }
