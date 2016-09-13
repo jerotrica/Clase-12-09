@@ -5,7 +5,6 @@ public class Bicicleta {
 		private Integer cadencia;
 		private Integer velocidad;
 		
-		//private String tipo;
 		
 		public Bicicleta()
 		{

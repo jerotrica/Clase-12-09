@@ -1,15 +1,15 @@
 package ar.edu.unlam.pb2;
 
-public class Triatlon extends Ruta {
+public class Triatlon extends BiciConCambios {
 
 	private String acople;
 	
 	public Triatlon(){
-		super(2,9);
+		super();
 	}
 	
 	public Triatlon(Integer platoMaximo, Integer pinionMaximo){
-		super(platoMaximo,pinionMaximo);
+		super();
 	}
 	public String getAcople() {
 		return acople;
