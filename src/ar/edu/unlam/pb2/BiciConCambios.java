@@ -13,8 +13,8 @@ public class BiciConCambios extends Bicicleta {
 		super();
 		this.plato=1;
 		this.pinion=1;
-		this.PINION_MAXIMO= getPINION_MAXIMO();
-		this.PLATO_MAXIMO = getPLATO_MAXIMO();
+		this.PINION_MAXIMO= 9;
+		this.PLATO_MAXIMO = 2;
 	}
 	
 	public BiciConCambios(Integer plato, Integer pinion, Integer platoMaximo,Integer pinionMaximo){

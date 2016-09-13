@@ -9,9 +9,9 @@ public class BicicletasTest {
 	@Test
 	public void testCrearUnObjetoBicicletaConCambios()
 	{
-		BiciConCambios miBici = new BiciConCambios();
-		miBici.setPinion(4);
-		assertEquals(miBici.getPlato(),4,0);	}
+		BiciConCambios miBici = new BiciConCambios(4,2,2,9);
+		miBici.setPlato(5);
+		assertEquals(miBici.getPlato(),5,0);	}
 	
 //	@Test
 //	public void testCrearUnObjetoBicicletaPlayera()
