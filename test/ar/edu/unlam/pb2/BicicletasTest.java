@@ -9,19 +9,20 @@ public class BicicletasTest {
 	@Test
 	public void testCrearUnObjetoBicicletaConCambios()
 	{
-		BiciConCambios miBici = new BiciConCambios(4,5,2,9);
+		BiciConCambios miBici = new BiciConCambios();
+		miBici.setPinion(4);
 		assertEquals(miBici.getPlato(),4,0);	}
 	
-	@Test
-	public void testCrearUnObjetoBicicletaPlayera()
-	{
-		Playera miPlayera = new Playera();
-	}
+//	@Test
+//	public void testCrearUnObjetoBicicletaPlayera()
+//	{
+//		Playera miPlayera = new Playera();
+//	}
 
 	@Test
 	public void testCrearUnObjetoBicicletaRuta()
 	{
-		Ruta miRutera = new Ruta(2,0);
+		Ruta miRutera = new Ruta();
 		miRutera.setPlato(2);
 		miRutera.acelerar();
 		assertEquals(miRutera.getPlato(),2,0);

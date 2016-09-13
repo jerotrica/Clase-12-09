@@ -13,8 +13,8 @@ public class BiciConCambios extends Bicicleta {
 		super();
 		this.plato=1;
 		this.pinion=1;
-		this.PINION_MAXIMO= 2;
-		this.PLATO_MAXIMO = 9;
+		this.PINION_MAXIMO= getPINION_MAXIMO();
+		this.PLATO_MAXIMO = getPLATO_MAXIMO();
 	}
 	
 	public BiciConCambios(Integer plato, Integer pinion, Integer platoMaximo,Integer pinionMaximo){
@@ -26,20 +26,19 @@ public class BiciConCambios extends Bicicleta {
 		
 	}
 	
-
 	public void setPlato(Integer plato)
 	{
 		if(this.plato>=1 && this.plato<=PLATO_MAXIMO)
 		{
-			setPlato(plato);
+			this.plato=plato;
 		}
 	}
 	
 	public void setPinion(Integer pinion)
 	{
-		if(pinion>=1 && pinion<=PINION_MAXIMO)
+		if(this.pinion>=1 && this.pinion<=PINION_MAXIMO)
 		{
-			setPinion(pinion);
+			this.pinion=pinion;
 		}
 	}
 
