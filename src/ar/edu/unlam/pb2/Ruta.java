@@ -1,35 +1,29 @@
 package ar.edu.unlam.pb2;
 
 public class Ruta extends BiciConCambios {
-	
-		public Ruta(Integer plato, Integer pinion, Integer platoMaximo, Integer pinionMaximo){
-			super();
-		}
-		
-		public Ruta(){
-			super();
-		}
-		
-		
-//		public void setPlato(Integer plato)
-//		{
-//			if(plato>=1 && plato<=super.getPLATO_MAXIMO())
-//			{
-//				super.setPlato(plato);
-//			}
-//		}
-//		
-//		public void setPinion(Integer pinion)
-//		{
-//			if(pinion>=1 && pinion<=super.getPINION_MAXIMO())
-//			{
-//				super.setPinion(pinion);
-//			}
-//		}
-		
 
-		public void acelerar(){
-			super.acelerar();
+	private Integer aceleracion;
+
+	public Ruta(Integer platoMaximo,Integer pinionMaximo){
+		super(platoMaximo, pinionMaximo);
+	}
+
+	public Ruta(Integer aceleracion) {
+		super();
+		this.aceleracion = aceleracion;
+	}
+
+	public Integer getAceleracion() {
+		return aceleracion;
+	}
+
+	public void setAceleracion(Integer aceleracion) {
+		this.aceleracion = aceleracion;
+	}
+
+	public void acelerar(Integer aceleracion) {
+		for (Integer i = 0; i < aceleracion; i++) {
 			super.acelerar();
 		}
+	}
 }
