@@ -9,7 +9,7 @@ public class Triatlon extends BiciConCambios {
 	}
 	
 	public Triatlon(Integer platoMaximo, Integer pinionMaximo){
-		super();
+		super(platoMaximo,pinionMaximo);
 	}
 	public String getAcople() {
 		return acople;

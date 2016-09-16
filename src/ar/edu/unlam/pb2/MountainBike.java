@@ -2,7 +2,8 @@ package ar.edu.unlam.pb2;
 
 public class MountainBike extends BiciConCambios {
 
-	
-	
-		// EN PROCESO
+	public MountainBike(Integer platoMaximo, Integer pinionMaximo) {
+		super(platoMaximo, pinionMaximo);
+	}
+
 }

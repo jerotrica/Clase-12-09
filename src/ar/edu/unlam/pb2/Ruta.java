@@ -21,8 +21,9 @@ public class Ruta extends BiciConCambios {
 		this.aceleracion = aceleracion;
 	}
 
-	public void acelerar(Integer aceleracion) {
-		for (Integer i = 0; i < aceleracion; i++) {
+	public void acelerar() {
+		for (Integer i = 0; i < this.aceleracion; i++) {
+			super.acelerar();
 			super.acelerar();
 		}
 	}

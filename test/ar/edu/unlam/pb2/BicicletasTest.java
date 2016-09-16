@@ -33,18 +33,22 @@ public class BicicletasTest {
 		miRutera.setPlato(2);
 		miRutera.setPinion(3);
 		miRutera.setAceleracion(4);
-		miRutera.acelerar(6);
+		miRutera.acelerar();
 		assertEquals(miRutera.getPlato(), 2, 0);
 		assertEquals(miRutera.getAceleracion(), 4, 0);
-		assertEquals(miRutera.getVelocidad(),6,0);
+		assertEquals(miRutera.getVelocidad(),8,0);
+		
 	}
 
 	@Test
 	public void testCrearUnObjetoBicicletaTriatlon() {
-		Triatlon miTriatlon = new Triatlon();
-		miTriatlon.setPlato(2);
+		Triatlon miTriatlon = new Triatlon(3,12);
+		miTriatlon.setPlato(3);
+		miTriatlon.setPinion(11);
 		miTriatlon.acelerar();
-		assertEquals(miTriatlon.getPlato(), 2, 0);
+		miTriatlon.acelerar();
+		assertEquals(miTriatlon.getPlato(), 3, 0);
+		assertEquals(miTriatlon.getPinion(),11,0);
 		assertEquals(miTriatlon.getVelocidad(), 2, 0);
 	}
 
@@ -55,6 +59,15 @@ public class BicicletasTest {
 		miTriatlon.setPinion(14);
 		assertNotEquals(miTriatlon.getPlato(), 3, 0);
 		assertEquals(miTriatlon.getPinion(), 14, 0);
+	}
+	
+	@Test
+	public void testCrearUnObjetoBiciMountain() {
+		MountainBike miMountain = new MountainBike(2, 9);
+		miMountain.setPlato(2);
+		miMountain.setPinion(4);
+		assertEquals(miMountain.getPlato(), 2, 0);
+		//assertEquals(miMountain.getPinion(), 4, 0);
 	}
 
 }
